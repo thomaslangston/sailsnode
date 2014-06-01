@@ -1,3 +1,9 @@
+#Private Config Data
+secrets/
+
+#Vim
+*.swp
+
 # Logs
 logs
 *.log
