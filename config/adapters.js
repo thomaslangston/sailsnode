@@ -35,5 +35,13 @@ module.exports.adapters = {
     // so you don't inadvertently push it up if you're using version control
     password: 'YOUR_MYSQL_PASSWORD', 
     database: 'YOUR_MYSQL_DB'
+  },
+
+  postgres: {
+    config: {
+        url: 'postgres://username:password@hostname:port/database',
+        pool: false,
+        ssl: false
+    }
   }
 };
