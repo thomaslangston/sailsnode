@@ -12,7 +12,7 @@ module.exports = {
     email: {
         type: 'email',
         required: true
-    }
+    },
     name: 'STRING'  	
   	/* e.g.
   	nickname: 'string'
