@@ -1,3 +1,6 @@
+#Sailsjs
+.tmp/
+
 #Private Config Data
 secrets/
 
