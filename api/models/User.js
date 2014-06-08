@@ -7,7 +7,7 @@
  */
 
 module.exports = {
-
+  tableName : 'sails_user',
   attributes: {
     email: {
         type: 'email',
