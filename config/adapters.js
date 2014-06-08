@@ -12,11 +12,13 @@
  * http://sailsjs.org/#documentation
  */
 
+var secrets = require('../secrets');
+
 module.exports.adapters = {
 
   // If you leave the adapter config unspecified 
   // in a model definition, 'default' will be used.
-  'default': 'disk',
+  'default': 'postgres',
 
   // Persistent adapter for DEVELOPMENT ONLY
   // (data is preserved when the server shuts down)
@@ -38,10 +40,9 @@ module.exports.adapters = {
   },
 
   postgres: {
-    config: {
-        url: 'postgres://username:password@hostname:port/database',
-        pool: false,
-        ssl: false
-    }
+    module: 'sails-postgresql',
+    url: secrets.postgresUrl(),
+    pool: false,
+    ssl: false
   }
 };
